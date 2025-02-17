@@ -1,0 +1,13 @@
+.breadcrumb li {
+  display: inline;
+}
+.breadcrumb .location + .location::before {
+  content: " > ";
+}
+.breadcrumb .location + .attribute::before {
+  content: " -- ";
+}
+
+.breadcrumb .attribute::after {
+  content: "[x]";
+}
